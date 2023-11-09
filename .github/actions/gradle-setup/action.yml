@@ -1,0 +1,17 @@
+name: "Setup Gradle"
+description: "Setup Gradle"
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout EDC Data Dashboard
+      uses: actions/checkout@v3
+      with:
+        repository: eclipse-edc/DataDashboard
+        path: system-tests/DataDashboard
+
+    # Install Java and cache MVD Gradle build.
+    - uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: 'gradle'

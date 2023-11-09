@@ -1,0 +1,12 @@
+{
+  "apiKey": "ApiKeyDefaultValue",
+  "managementApiUrl": "http://localhost:9191/api/management",
+<<<<<<< HEAD
+=======
+  "catalogUrl": "http://localhost:9191/api/management",
+  "storageAccount": "company1assets",
+>>>>>>> d56735ae2d534c0e38c0387c44b952bef85a530c
+  "storageExplorerLinkTemplate": "storageexplorer://v=1",
+  "theme": "theme-1",
+  "baseUrl": "http://localhost:8080/upload/aggregatedData.json"
+}
